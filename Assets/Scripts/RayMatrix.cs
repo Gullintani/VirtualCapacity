@@ -15,7 +15,7 @@ public class RayMatrix : MonoBehaviour
         capacitanceMatrix = new float[rows, columns];
     }
     void Update() {        
-        // Populate capacitance matrix
+        // populate capacitance matrix
         for (int row = 0; row < rows; row++)
         {
             for (int col = 0; col < columns; col++)
@@ -31,9 +31,11 @@ public class RayMatrix : MonoBehaviour
                     // Change Color if hit
                     Debug.DrawRay(cellPos, transform.up * Vector3.Distance(cellPos, hit.point), Color.red);
                     capacitanceMatrix[row, col] = Vector3.Distance(cellPos, hit.point);
-                    Debug.Log(capacitanceMatrix);
                 }
             }
         }
+
+        // print capacitance matrix for every update
+        Debug.Log(capacitanceMatrix);
     }
 }
