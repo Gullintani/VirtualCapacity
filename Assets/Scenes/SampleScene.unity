@@ -169,8 +169,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6a63e32dc7c64b5b8b935899ac649a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rows: 20
-  columns: 20
+  rows: 8
+  columns: 8
   cellSize: 0.1
   maximumDistance: 10
 --- !u!23 &550783796
@@ -492,7 +492,7 @@ Transform:
   m_GameObject: {fileID: 2134335659}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

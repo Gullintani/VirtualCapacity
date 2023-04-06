@@ -25,17 +25,20 @@ public class RayMatrix : MonoBehaviour
                 Debug.DrawRay(cellPos, transform.up * maximumDistance, Color.green);
                 // Debug.DrawRay(cellPos, transform.forward, Color.green);
 
+
                 RaycastHit hit;
                 if (Physics.Raycast(cellPos, transform.up * maximumDistance, out hit))
                 {   
                     // Change Color if hit
                     Debug.DrawRay(cellPos, transform.up * Vector3.Distance(cellPos, hit.point), Color.red);
                     capacitanceMatrix[row, col] = Vector3.Distance(cellPos, hit.point);
+                }else{
+                    capacitanceMatrix[row, col] = 0.0f;
                 }
             }
         }
-
+        // Debug.Log(capacitanceMatrix);
         // print capacitance matrix for every update
-        Debug.Log(capacitanceMatrix);
+        // Debug.Log(capacitanceMatrix);
     }
 }
