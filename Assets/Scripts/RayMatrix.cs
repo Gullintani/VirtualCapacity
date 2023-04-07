@@ -8,7 +8,7 @@ public class RayMatrix : MonoBehaviour
     public int columns = 2;
     public float cellSize = 0.5f;
     public float maximumDistance = 10f;
-    private float[,] capacitanceMatrix;
+    public float[,] capacitanceMatrix;
 
     void Start()
     {
@@ -37,8 +37,8 @@ public class RayMatrix : MonoBehaviour
                 }
             }
         }
-        // Debug.Log(capacitanceMatrix);
         // print capacitance matrix for every update
-        // Debug.Log(capacitanceMatrix);
+        // Debug.Log(capacitanceMatrix.GetLength(1));
+        
     }
 }
