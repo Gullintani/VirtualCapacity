@@ -12,7 +12,7 @@ public class SingleRay : MonoBehaviour
         Ray ray = new Ray(transform.position, rayDirection.normalized);
 
         // 绘制射线
-        Debug.DrawRay(ray.origin, ray.direction * 20, Color.red);
+        Debug.DrawRay(ray.origin, ray.direction * Distance, Color.red);
 
         // 发射射线并检测相交物体
         RaycastHit[] hits = Physics.RaycastAll(ray);
